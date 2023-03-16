@@ -22,3 +22,7 @@ you get a ContractAPI object that contains contract instances for ease of use in
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/66336085/225489692-f87f1dab-d5d9-4053-9551-d45226e7735a.png">
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/66336085/225489902-4826a57b-2b47-4b15-bccb-8594eddb62fd.png">
 
+## Recommendations:
+I strongly recommend calling contract methods in middleware. Don't forget that all contract calls are asynchronous expressions. And there are behaviors that require you to first wait for the execution of some network request in order to later trigger another network request. You will need to build a controlled call queue for the correct behavior of the dapp. This will help you avoid a lot of bugs.
+
+#### Always isolate network calls and business logic from UI components!
