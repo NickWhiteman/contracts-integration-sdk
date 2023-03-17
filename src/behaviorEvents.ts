@@ -10,55 +10,7 @@
  */
 export const behaviorEvents = (event: string, info: ObjectEventType) => {
   switch (event) {
-    case 'Approval':
-      return () => {
-        return info;
-      };
-    case 'Transfer':
-      return () => {
-        return info;
-      };
-    case 'CoinsWithdrawn':
-      return () => {
-        return info;
-      };
-    case 'PriceChanged':
-      return () => {
-        return info;
-      };
-    case 'TokensPurchased':
-      return () => {
-        return info;
-      };
-    case 'TokensWithdrawn':
-      return () => {
-        return info;
-      };
-    case 'Staked':
-      return () => {
-        return info;
-      };
-    case 'UnStaked':
-      return () => {
-        return info;
-      };
-    case 'Bought':
-      return () => {
-        return info;
-      };
-    case 'Invested':
-      return () => {
-        return info;
-      };
-    case 'Withdrawn':
-      return () => {
-        return info;
-      };
-    case 'Frozen':
-      return () => {
-        return info;
-      };
-    case 'UnFrozen':
+    case '':
       return () => {
         return info;
       };
